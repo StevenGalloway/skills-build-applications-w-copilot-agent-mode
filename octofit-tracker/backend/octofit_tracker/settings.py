@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-u(jus0pa-b4i291ay=w9my#ho#1!e*f&98702x!2v4p_pt8bb-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['glorious-enigma-pjr6wpxq7g57h7x7x-8000.app.github.dev', 'localhost']
 
 
 # Application definition
@@ -143,3 +143,6 @@ CORS_ALLOW_HEADERS = [
     'authorization',
     'x-csrftoken',
 ]
+
+SECURE_SSL_REDIRECT = False
+CSRF_TRUSTED_ORIGINS = ['https://glorious-enigma-pjr6wpxq7g57h7x7x-8000.app.github.dev']
